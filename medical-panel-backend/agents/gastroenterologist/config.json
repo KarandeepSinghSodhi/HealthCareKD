@@ -1,0 +1,9 @@
+{
+    "theme": "gastro",
+    "name": "Gastroenterologist",
+    "colors": {
+        "primary": "amber-600",
+        "background": "amber-50"
+    },
+    "avatar": "gastroenterologist.png"
+}

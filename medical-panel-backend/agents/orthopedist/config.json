@@ -1,0 +1,9 @@
+{
+    "theme": "ortho",
+    "name": "Orthopedist",
+    "colors": {
+        "primary": "slate-500",
+        "background": "slate-50"
+    },
+    "avatar": "orthopedist.png"
+}

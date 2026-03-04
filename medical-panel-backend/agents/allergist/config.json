@@ -1,0 +1,10 @@
+{
+    "name": "Allergist",
+    "theme": "allergy",
+    "colors": {
+        "primary": "emerald-500",
+        "background": "emerald-50",
+        "text": "emerald-900"
+    },
+    "avatar": "allergist.png"
+}

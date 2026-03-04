@@ -1,0 +1,9 @@
+{
+    "theme": "psych",
+    "name": "Psychiatrist",
+    "colors": {
+        "primary": "indigo-500",
+        "background": "indigo-50"
+    },
+    "avatar": "psychiatrist.png"
+}

@@ -1,0 +1,9 @@
+{
+    "theme": "peds",
+    "name": "Pediatrician",
+    "colors": {
+        "primary": "sky-400",
+        "background": "sky-50"
+    },
+    "avatar": "pediatrician.png"
+}

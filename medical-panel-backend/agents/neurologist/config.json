@@ -1,0 +1,9 @@
+{
+    "theme": "neuro",
+    "name": "Neurologist",
+    "colors": {
+        "primary": "purple-600",
+        "background": "purple-50"
+    },
+    "avatar": "neurologist.png"
+}

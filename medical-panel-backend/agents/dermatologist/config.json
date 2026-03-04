@@ -1,0 +1,9 @@
+{
+    "theme": "derma",
+    "name": "Dermatologist",
+    "colors": {
+        "primary": "rose-400",
+        "background": "rose-50"
+    },
+    "avatar": "dermatologist.png"
+}

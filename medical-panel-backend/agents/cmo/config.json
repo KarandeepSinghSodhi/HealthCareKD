@@ -1,0 +1,9 @@
+{
+    "theme": "cmo",
+    "name": "General Practitioner",
+    "colors": {
+        "primary": "blue-500",
+        "background": "blue-50"
+    },
+    "avatar": "cmo.png"
+}

@@ -1,0 +1,9 @@
+{
+    "theme": "cardio",
+    "name": "Cardiologist",
+    "colors": {
+        "primary": "red-600",
+        "background": "red-50"
+    },
+    "avatar": "cardiologist.png"
+}
