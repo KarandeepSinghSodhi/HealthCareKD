@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 import logging
+import asyncio
 
 # Always load the .env relative to this file, not cwd.
 # This fixes the uvicorn --reload subprocess not finding .env.
@@ -10,7 +11,9 @@ load_dotenv(_env_path, override=True)
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.routes import router
+from api import routes
+from core.agent_manager import AgentManager
+from rag.rag_manager import RAGManager
 
 
 # Configure logging
@@ -39,7 +42,26 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(router, prefix="/api")
+# Initialize managers
+logger.info("Initializing AgentManager...")
+agent_manager = AgentManager()
+routes.set_manager(agent_manager)
+
+# Initialize RAG system (lazy loading - documents loaded on first /reload-documents call)
+logger.info("Initializing RAG system...")
+documents_dir = Path(__file__).parent / "rag" / "documents"
+embeddings_dir = Path(__file__).parent / "rag" / "embeddings"
+rag_manager = None
+try:
+    rag_manager = RAGManager(str(documents_dir), str(embeddings_dir))
+    logger.info("RAG Manager created (documents will be loaded on demand via /reload-documents endpoint)")
+    routes.set_rag_manager(rag_manager)
+except Exception as e:
+    logger.warning(f"RAG Manager initialization failed (backend will continue without RAG): {e}")
+    rag_manager = None
+    # Continue - backend can work without RAG
+
+app.include_router(routes.router, prefix="/api")
 
 @app.get("/")
 def read_root():

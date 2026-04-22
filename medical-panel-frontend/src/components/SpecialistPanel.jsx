@@ -13,9 +13,9 @@ const ICONS = {
     allergist: '🌿',
 };
 
-export default function SpecialistPanel({ specialists, activeSpecs }) {
-    const displayed = specialists.filter(s => activeSpecs.includes(s.id));
-    const isSolo = displayed.length === 1;
+export default function SpecialistPanel({ specialists }) {
+    const displayed = specialists;  // Show all specialists since all respond now
+    const specCount = displayed.length;
 
     return (
         <div className="sidebar">
@@ -28,7 +28,7 @@ export default function SpecialistPanel({ specialists, activeSpecs }) {
                     Active Panel
                 </p>
                 <p style={{ fontSize: 11, color: 'rgba(255,255,255,0.18)' }}>
-                    {displayed.length} specialist{displayed.length !== 1 ? 's' : ''} evaluating
+                    {specCount} specialist{specCount !== 1 ? 's' : ''} evaluating
                 </p>
             </div>
 
@@ -36,7 +36,6 @@ export default function SpecialistPanel({ specialists, activeSpecs }) {
             <div className="scrollbar-none" style={{ flex: 1, overflowY: 'auto', padding: '10px 8px' }}>
                 <AnimatePresence mode="popLayout">
                     {displayed.map((spec) => {
-                        const solo = isSolo && spec.id !== 'cmo';
                         return (
                             <motion.div
                                 key={spec.id}
@@ -45,7 +44,7 @@ export default function SpecialistPanel({ specialists, activeSpecs }) {
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: -20, scale: 0.85, filter: 'blur(3px)', transition: { duration: 0.3 } }}
                                 transition={{ type: 'spring', stiffness: 280, damping: 26 }}
-                                className={`accent-transition ${solo ? 'accent-glow accent-bg-subtle' : ''}`}
+                                className="accent-transition"
                                 style={{
                                     display: 'flex',
                                     alignItems: 'center',
@@ -54,13 +53,13 @@ export default function SpecialistPanel({ specialists, activeSpecs }) {
                                     borderRadius: 12,
                                     marginBottom: 4,
                                     cursor: 'default',
-                                    background: solo ? undefined : 'transparent',
+                                    background: 'transparent',
                                 }}
                             >
                                 {/* Avatar */}
                                 <div className="spec-avatar" style={{
-                                    background: solo ? 'var(--color-accent-subtle)' : 'rgba(255,255,255,0.07)',
-                                    border: solo ? '1px solid var(--color-accent)' : '1px solid rgba(255,255,255,0.08)',
+                                    background: 'rgba(255,255,255,0.07)',
+                                    border: '1px solid rgba(255,255,255,0.08)',
                                 }}>
                                     <img
                                         src={`/avatars/${spec.avatar}`}
@@ -89,7 +88,7 @@ export default function SpecialistPanel({ specialists, activeSpecs }) {
                                     <p className="accent-transition" style={{
                                         fontSize: 13,
                                         fontWeight: 500,
-                                        color: solo ? 'var(--color-accent-text)' : 'rgba(255,255,255,0.78)',
+                                        color: 'rgba(255,255,255,0.78)',
                                         overflow: 'hidden',
                                         whiteSpace: 'nowrap',
                                         textOverflow: 'ellipsis',

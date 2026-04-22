@@ -9,11 +9,11 @@ import SpecialistPanel from './components/SpecialistPanel';
 function App() {
   const [specialists, setSpecialists] = useState([]);
   const [isLoadingSpecs, setIsLoadingSpecs] = useState(true);
-  const [activeSpecialists, setActiveSpecialists] = useState([]);
   const [activeTheme, setActiveTheme] = useState('cmo');
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [specialistResponses, setSpecialistResponses] = useState({});
 
   // Fetch specialists on mount
   useEffect(() => {
@@ -25,7 +25,6 @@ function App() {
         const data = await res.json();
         log('Fetched specialists:', data);
         setSpecialists(data);
-        setActiveSpecialists(data.map(s => s.id));
       } catch (err) {
         error('Error fetching specialists:', err);
         setError('Could not connect to the Medical Panel backend. Please ensure the server is running.');
@@ -37,20 +36,11 @@ function App() {
     fetchSpecialists();
   }, []);
 
-  // Dynamic theme: switch when one specialist remains
+  // Dynamic theme: always use CMO theme since all specialists respond
   useEffect(() => {
-    log('Active specialists changed:', activeSpecialists);
-    if (activeSpecialists.length === 1 && specialists.length > 0) {
-      const remaining = specialists.find(s => s.id === activeSpecialists[0]);
-      if (remaining) {
-        log('Switching theme to', remaining.theme);
-        setActiveTheme(remaining.theme);
-      }
-    } else if (activeSpecialists.length > 1) {
-      log('Switching theme to cmo');
-      setActiveTheme('cmo');
-    }
-  }, [activeSpecialists, specialists]);
+    log('Setting theme to cmo (all specialists now respond)');
+    setActiveTheme('cmo');
+  }, []);
 
   const handleSendMessage = async (content) => {
     const userMsg = { role: 'user', content };
@@ -60,25 +50,97 @@ function App() {
     setIsLoading(true);
 
     try {
-      log('Sending chat to backend:', { messages: newMessages, active_specialists: activeSpecialists });
-      const res = await fetch('http://localhost:8000/api/chat', {
+      log('Attempting streaming chat...');
+      const response = await fetch('http://localhost:8000/api/chat-stream', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: newMessages, active_specialists: activeSpecialists }),
+        body: JSON.stringify({ messages: newMessages }),
       });
-      if (!res.ok) throw new Error('API error');
-      const data = await res.json();
-      log('Received response from backend:', data);
-      setMessages([...newMessages, { role: 'assistant', content: data.response }]);
-      setActiveSpecialists(data.active_specialists);
+      
+      if (!response.ok) throw new Error('Streaming API error');
+      
+      // Handle Server-Sent Events stream
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+      let hasError = false;
+      const streamedResponses = {};
+      let primaryResponse = '';
+      
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        
+        // Keep last incomplete line in buffer
+        buffer = lines[lines.length - 1];
+        
+        for (let i = 0; i < lines.length - 1; i++) {
+          const line = lines[i];
+          if (line.startsWith('data: ')) {
+            try {
+              const jsonStr = line.substring(6);
+              const event = JSON.parse(jsonStr);
+              
+              log('Stream event:', event.event);
+              
+              if (event.event === 'specialist_response') {
+                streamedResponses[event.specialist_id] = event.response;
+                setSpecialistResponses(prev => ({
+                  ...prev,
+                  [event.specialist_id]: event.response
+                }));
+              } else if (event.event === 'complete') {
+                primaryResponse = event.primary_response;
+                log('Stream complete, total calls:', event.total_calls);
+              } else if (event.event === 'error') {
+                hasError = true;
+                warn('Streaming error, will fall back to regular chat:', event.message);
+              }
+            } catch (e) {
+              error('Failed to parse stream event:', e);
+            }
+          }
+        }
+      }
+      
+      // If streaming succeeded with response, use it
+      if (primaryResponse) {
+        setMessages([...newMessages, { role: 'assistant', content: primaryResponse }]);
+        setIsLoading(false);
+        return;
+      }
+      
+      // If streaming failed or no response, fall back to regular API
+      if (hasError || !primaryResponse) {
+        log('Streaming unavailable, falling back to regular /api/chat...');
+        throw new Error('Fallback to regular API');
+      }
     } catch (err) {
-      error('Error sending message:', err);
-      setMessages([...newMessages, {
-        role: 'assistant',
-        content: "I'm sorry, I'm having trouble connecting to the panel right now.",
-      }]);
+      // Fallback: Use regular /api/chat endpoint
+      log('Falling back to regular chat endpoint:', err.message);
+      try {
+        const res = await fetch('http://localhost:8000/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: newMessages }),
+        });
+        if (!res.ok) throw new Error('Fallback API error');
+        const data = await res.json();
+        log('Received fallback response:', data);
+        setMessages([...newMessages, { role: 'assistant', content: data.response }]);
+        setSpecialistResponses(data.specialist_responses || {});
+      } catch (fallbackErr) {
+        error('Error in fallback chat:', fallbackErr);
+        setMessages([...newMessages, {
+          role: 'assistant',
+          content: "I'm sorry, I'm having trouble connecting to the panel right now. Please try again in a moment.",
+        }]);
+      }
     } finally {
-      log('Finished sending chat.');
+      log('Finished chat.');
       setIsLoading(false);
     }
   };
@@ -116,7 +178,6 @@ function App() {
       {/* Left sidebar */}
       <SpecialistPanel
         specialists={specialists}
-        activeSpecs={activeSpecialists}
       />
 
       {/* Right — chat */}
@@ -125,8 +186,8 @@ function App() {
         isLoading={isLoading}
         onSendMessage={handleSendMessage}
         activeTheme={activeTheme}
-        activeSpecialists={activeSpecialists}
         specialists={specialists}
+        specialistResponses={specialistResponses}
       />
     </div>
   );

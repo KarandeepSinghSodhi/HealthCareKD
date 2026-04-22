@@ -1,11 +1,11 @@
 {
   "allergist": false,
-  "cardiologist": false,
+  "cardiologist": true,
   "cmo": true,
-  "dermatologist": false,
-  "gastroenterologist": false,
+  "dermatologist": true,
+  "gastroenterologist": true,
   "neurologist": false,
   "orthopedist": false,
-  "pediatrician": false,
+  "pediatrician": true,
   "psychiatrist": false
 }

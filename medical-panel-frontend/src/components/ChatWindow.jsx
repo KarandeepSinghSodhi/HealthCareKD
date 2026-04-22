@@ -12,12 +12,10 @@ const SUGGESTIONS = [
     'I have severe headaches and blurry vision',
 ];
 
-export default function ChatWindow({ messages, isLoading, onSendMessage, activeTheme, activeSpecialists, specialists }) {
+export default function ChatWindow({ messages, isLoading, onSendMessage, activeTheme, specialists, specialistResponses }) {
     const [input, setInput] = useState('');
     const bottomRef = useRef(null);
     const textareaRef = useRef(null);
-    const isSolo = activeSpecialists && activeSpecialists.length === 1;
-    const soloSpec = isSolo && specialists ? specialists.find(s => s.id === activeSpecialists[0]) : null;
 
     useEffect(() => {
         bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -54,14 +52,6 @@ export default function ChatWindow({ messages, isLoading, onSendMessage, activeT
                 flexShrink: 0,
             }}>
                 <span style={{ fontSize: 13, fontWeight: 500, color: 'rgba(255,255,255,0.5)' }}>🩺 Medical Panel</span>
-                {soloSpec && (
-                    <span className="accent-bg-subtle accent-text accent-transition" style={{
-                        marginLeft: 'auto', fontSize: 11, fontWeight: 600,
-                        padding: '3px 10px', borderRadius: 999,
-                    }}>
-                        {soloSpec.name}
-                    </span>
-                )}
             </div>
 
             {/* Messages */}
@@ -125,15 +115,32 @@ export default function ChatWindow({ messages, isLoading, onSendMessage, activeT
                             </div>
                         ))}
 
-                        {/* Typing dots */}
+                        {/* Typing dots with streaming status */}
                         {isLoading && (
-                            <div className="msg-in" style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                                <div className="avatar-circle accent-bg-subtle accent-text accent-transition">🩺</div>
-                                <div className="bubble-ai" style={{ display: 'flex', alignItems: 'center', gap: 5, padding: '14px 18px' }}>
-                                    <span className="typing-dot" />
-                                    <span className="typing-dot" />
-                                    <span className="typing-dot" />
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                                <div className="msg-in" style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                                    <div className="avatar-circle accent-bg-subtle accent-text accent-transition">🩺</div>
+                                    <div className="bubble-ai" style={{ display: 'flex', alignItems: 'center', gap: 5, padding: '14px 18px' }}>
+                                        <span className="typing-dot" />
+                                        <span className="typing-dot" />
+                                        <span className="typing-dot" />
+                                    </div>
                                 </div>
+                                
+                                {/* Show specialists responding in real-time */}
+                                {specialistResponses && Object.keys(specialistResponses).length > 0 && (
+                                    <div style={{
+                                        marginLeft: 50,
+                                        fontSize: 12,
+                                        color: 'rgba(255,255,255,0.4)',
+                                        fontStyle: 'italic'
+                                    }}>
+                                        {Object.keys(specialistResponses).length === 1 
+                                            ? `${Object.keys(specialistResponses)[0]} responded`
+                                            : `${Object.keys(specialistResponses).length} specialists responding...`
+                                        }
+                                    </div>
+                                )}
                             </div>
                         )}
                     </div>

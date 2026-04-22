@@ -7,7 +7,8 @@ class Message(BaseModel):
     
 class ChatRequest(BaseModel):
     messages: List[Message]
-    active_specialists: List[str]
+    # Note: active_specialists removed - all enabled specialists always active
+    # To specify which specialists respond, use agents_enabled.json configuration
 
 class SpecialistConfig(BaseModel):
     id: str
@@ -19,5 +20,13 @@ class SpecialistConfig(BaseModel):
 
 class ChatResponse(BaseModel):
     response: str
-    active_specialists: List[str]
-    dropped_specialists: List[str]
+    # For new architecture with multiple specialist responses
+    specialist_responses: Optional[Dict[str, str]] = None  # specialist_id -> response text
+    # Note: active_specialists and dropped_specialists removed
+    # All enabled specialists in agents_enabled.json stay active throughout session
+
+class RAGStats(BaseModel):
+    total_chunks: int
+    documents_loaded: int
+    documents: List[str]
+

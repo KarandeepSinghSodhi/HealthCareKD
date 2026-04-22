@@ -1,0 +1,237 @@
+SAMPLE MEDICAL GUIDELINES AND DIAGNOSTIC CRITERIA
+
+=== CARDIOVASCULAR DISEASE GUIDELINES ===
+
+1. HYPERTENSION DIAGNOSIS
+   - Normal: <120 mmHg systolic and <80 mmHg diastolic
+   - Elevated: 120-129 mmHg systolic and <80 mmHg diastolic
+   - Stage 1 Hypertension: 130-139 mmHg systolic or 80-89 mmHg diastolic
+   - Stage 2 Hypertension: ≥140 mmHg systolic or ≥90 mmHg diastolic
+   - Hypertensive Crisis: >180 mmHg systolic and/or >120 mmHg diastolic
+
+2. MYOCARDIAL INFARCTION (MI) DIAGNOSIS
+   - Symptoms: Chest pain/pressure, dyspnea, diaphoresis, palpitations
+   - Diagnostic criteria: Two of three components:
+     a) ECG changes (ST elevation, T-wave inversion)
+     b) Elevated cardiac biomarkers (troponin, CK-MB)
+     c) Clinical history consistent with MI
+   - Risk factors: Smoking, diabetes, hypertension, family history, obesity
+   - Treatment: Aspirin, anticoagulation, beta-blockers, ACE inhibitors, statins
+
+3. HEART FAILURE MANAGEMENT
+   - Classification: NYHA Stages I-IV based on symptoms and exercise tolerance
+   - Systolic dysfunction: LVEF <40%
+   - Diastolic dysfunction: LVEF ≥50% with evidence of diastolic impairment
+   - Core medications: ACE-I/ARB, beta-blockers, MRAs, SGLT2 inhibitors
+   - Monitoring: BNP/NT-proBNP levels, ejection fraction, functional capacity
+
+=== DERMATOLOGIC CONDITIONS ===
+
+1. ACNE VULGARIS
+   - Severity assessment: Mild (comedones only), Moderate (papules/pustules), Severe (nodules/cysts)
+   - Pathogenesis: Follicular hyperkeratinization, sebaceous gland activity, C. acnes, inflammation
+   - First-line treatments: Benzoyl peroxide, retinoids, topical antibiotics
+   - Second-line: Oral antibiotics (doxycycline, erythromycin), hormonal therapy
+   - Severe acne: Isotretinoin (requires strict monitoring: LFTs, lipids, pregnancy status)
+
+2. MELANOMA SCREENING
+   - ABCDE Rule: Asymmetry, Border irregularity, Color variation, Diameter >6mm, Evolution/change
+   - Risk factors: UV exposure, family history, fair skin, atypical nevus syndrome
+   - Subtype-specific features:
+     - Superficial spreading: Most common, variable pigmentation
+     - Nodular: Uniform dark color, rapid growth
+     - Lentigo maligna: Older patients, sun-exposed areas
+   - Prognosis: Based on Breslow thickness, mitotic rate, ulceration status
+
+3. PSORIASIS MANAGEMENT
+   - Plaque psoriasis: Well-demarcated erythematous plaques with silvery scale
+   - Trigger factors: Infections, stress, certain medications, skin trauma
+   - Treatment ladder:
+     - Mild: Topical corticosteroids, vitamin D analogs, emollients
+     - Moderate: Phototherapy (PUVA, NB-UVB), systemic retinoids
+     - Severe: Biologic agents (TNF-alpha inhibitors, IL-17 inhibitors, IL-23 inhibitors)
+
+=== ENDOCRINE CONDITIONS ===
+
+1. DIABETIC SCREENING AND DIAGNOSIS
+   - Normal fasting glucose: <100 mg/dL
+   - Prediabetes: 100-125 mg/dL fasting
+   - Diabetes: ≥126 mg/dL fasting (on two occasions) OR random ≥200 mg/dL with symptoms
+   - HbA1c target: <7% for most patients, individualize based on age/comorbidities
+   - Screening interval: Every 3 years if normal, annually if prediabetes
+
+2. THYROID DYSFUNCTION
+   - Hypothyroidism: TSH elevated, Free T4 low
+   - Hyperthyroidism: TSH suppressed, Free T4 elevated
+   - TSH targets: 0.5-5.0 mIU/L (normal), goals vary by condition
+   - Initial therapy: Levothyroxine for hypothyroidism, PTU/propranolol for hyperthyroidism
+   - Monitoring: Repeat TFTs 6-8 weeks after dose change, then annually
+
+3. METABOLIC SYNDROME CRITERIA (IDF)
+   - Central obesity (waist circumference) + 2 of:
+     a) Elevated triglycerides (≥150 mg/dL)
+     b) Reduced HDL (<40 mg/dL men, <50 mg/dL women)
+     c) Elevated BP (≥130/85 mmHg)
+     d) Elevated fasting glucose (≥100 mg/dL)
+   - Management: Weight loss, diet, exercise, pharmacotherapy if indicated
+
+=== NEUROLOGICAL DISORDERS ===
+
+1. MIGRAINE DIAGNOSIS
+   - Criteria: 5+ episodes of headache lasting 4-72 hours
+   - Features: Unilateral, pulsating, moderate-severe intensity, aggravated by activity
+   - Associated symptoms: Nausea/vomiting, photophobia, phonophobia
+   - Aura: Reversible focal neurological symptoms preceding headache
+   - Preventive therapy: Beta-blockers, TCAs, topiramate, CGRP inhibitors
+
+2. SEIZURE DISORDER MANAGEMENT
+   - Seizure types: Generalized (tonic-clonic, absence, myoclonic) vs Focal
+   - Diagnosis: Clinical history, EEG findings, neuroimaging
+   - First-line AEDs: Levetiracetam, lamotrigine, valproic acid
+   - Goals: Seizure freedom, minimize adverse effects, avoid polypharmacy when possible
+   - Monitoring: Drug levels if indicated, liver/renal function, blood counts
+
+3. PARKINSON'S DISEASE
+   - Cardinal features: Bradykinesia + resting tremor AND/OR rigidity
+   - Supporting criteria: Asymmetric onset, excellent levodopa response, no atypical features
+   - Early management: Levodopa, dopamine agonists, MAO-B inhibitors
+   - Complications: Motor fluctuations, dyskinesias (manage with dose optimization, extended-release formulations)
+   - Non-motor symptoms: Depression, anxiety, cognitive decline, autonomic dysfunction
+
+=== ALLERGIC AND IMMUNOLOGIC CONDITIONS ===
+
+1. ALLERGIC RHINITIS
+   - Classification: Intermittent vs Persistent; Mild vs Moderate-Severe
+   - Common allergens: Pollens, dust mites, pet dander, mold
+   - Management: Avoidance, antihistamines, intranasal corticosteroids, decongestants
+   - Severe cases: Allergen immunotherapy (3-5 years), monoclonal antibodies
+
+2. ASTHMA SEVERITY AND CONTROL
+   - Severity assessment: Intermittent, Mild-Persistent, Moderate-Persistent, Severe-Persistent
+   - Control assessment: Well-controlled, Not well-controlled, Very poorly controlled
+   - Step-wise therapy: Short-acting β-agonist → ICS → ICS/LABA → Add LTRA/theophylline → Increase doses
+   - Triggers: Allergens, infections, exercise, GERD, environmental irritants
+   - Monitoring: PEF/FEV1 trending, exacerbation frequency, nocturnal symptoms
+
+3. ANAPHYLAXIS MANAGEMENT
+   - Immediate: Epinephrine IM 0.3-0.5mg (1:1000) into lateral thigh, repeat q5-15min
+   - Supportive: IV access, antihistamines (H1/H2 blockers), corticosteroids
+   - Triggers: Foods, medications, insect stings, latex
+   - Prevention: Avoidance, medical alert identification, carry epinephrine auto-injector
+   - Observation: Minimum 4-8 hours for biphasic reactions
+
+=== GASTROINTESTINAL DISORDERS ===
+
+1. PEPTIC ULCER DISEASE
+   - Most common causes: H. pylori (90%) and NSAIDs (10%)
+   - Symptoms: Epigastric pain, nausea, vomiting, bleeding
+   - Diagnosis: Endoscopy with biopsy for H. pylori, serology, stool antigen testing
+   - Triple therapy: PPI + amoxicillin + clarithromycin × 10-14 days
+   - Follow-up: Confirm H. pylori eradication 4+ weeks post-treatment
+
+2. IRRITABLE BOWEL SYNDROME
+   - Diagnostic criteria: Recurrent abdominal pain ≥4 days/month × 3 months
+   - Subtypes: IBS-D (diarrhea), IBS-C (constipation), IBS-M (mixed), IBS-U (unclassified)
+   - First-line: Dietary modification, stress reduction, regular exercise
+   - Pharmacotherapy: Fiber/osmotic agents, antispasmodics, loperamide, lubiprostone
+   - Exclude: Alarm symptoms (age >50, blood in stool, family history of cancer) warrant colonoscopy
+
+3. INFLAMMATORY BOWEL DISEASE
+   - Ulcerative Colitis: Limited to colon and rectum, continuous inflammation
+   - Crohn's Disease: Any site GI tract, segmental inflammation, transmural
+   - Induction therapy: Mesalamine, corticosteroids, azathioprine/mercaptopurine
+   - Maintenance: 5-ASA compounds, immunosuppressants, TNF-alpha inhibitors, JAK inhibitors
+   - Monitoring: CRP, fecal calprotectin, endoscopy for mucosal healing assessment
+
+=== INFECTIOUS DISEASES ===
+
+1. BACTERIAL INFECTIONS - ANTIBIOTIC SELECTION
+   - Community-acquired pneumonia (CAP): Oral amoxicillin-clavulanate or respiratory FQ
+   - Urinary tract infections: TMP-SMX or nitrofurantoin (uncomplicated cystitis)
+   - Sinusitis: Observe vs amoxicillin-clavulanate (if severe or persists >10 days)
+   - Otitis media: Amoxicillin first-line; amoxicillin-clavulanate if resistant suspected
+   - Cellulitis: Cephalexin or cloxacillin (MSSA); adjust for MRSA if risk factors
+
+2. VIRAL HEPATITIS
+   - Hepatitis A: Self-limited, supportive care, prevention via vaccination
+   - Hepatitis B: HBsAg positive × 6 months = chronic; treatment indicated if HBeAg+ or elevated ALT
+   - Hepatitis C: Directly acting antivirals achieve >95% cure; genotype-guided therapy
+   - Treatment monitoring: HCV RNA suppression, ALT normalization, fibrosis assessment
+
+3. COVID-19 MANAGEMENT
+   - Risk stratification: Mild, Moderate (pneumonia), Severe (hypoxia), Critical (ARDS)
+   - Antiviral therapy: Paxlovid, remdesivir (within 5 days symptom onset for severe risk)
+   - Immunomodulation: Dexamethasone for moderate-critical disease (reduces mortality)
+   - Vaccination: Primary series + boosters for high-risk; updated vaccines seasonally
+
+=== ORTHOPEDIC CONDITIONS ===
+
+1. OSTEOARTHRITIS (OA) MANAGEMENT
+   - Pathophysiology: Cartilage degeneration, osteophyte formation, joint space narrowing
+   - Risk factors: Age, obesity, joint trauma, repetitive stress, genetic predisposition
+   - Staging: Mild (minimal cartilage loss), Moderate (cartilage < 50%), Severe (near bone-on-bone)
+   - Treatment: Weight loss, exercise, NSAIDs, intra-articular corticosteroid injections
+   - Surgical: Total joint replacement if conservative failed and functional limitation severe
+
+2. RHEUMATOID ARTHRITIS (RA)
+   - Diagnostic criteria: Symmetrical joint swelling/pain + positive RF/anti-CCP + elevated inflammatory markers
+   - Genetic: HLA-DR4 and HLA-DR1 association (shared epitope)
+   - Early intervention: DMARDs within 3 months of symptom onset improves outcomes
+   - First-line DMARD: Methotrexate monotherapy or in combination
+   - Biologic agents: TNF inhibitors, IL-6 inhibitors, IL-17 inhibitors for DMARD-inadequate response
+
+3. ACUTE INJURY MANAGEMENT (RICE Protocol)
+   - Rest: Avoid activities that aggravate injury
+   - Ice: 15-20 minutes every 2-3 hours for first 48-72 hours
+   - Compression: Elastic bandage to reduce swelling
+   - Elevation: Above heart level to minimize edema
+   - Pharmacotherapy: Acetaminophen, NSAIDs; muscle relaxants if severe spasm
+   - Rehabilitation: Graduated return to activity, physical/occupational therapy as indicated
+
+=== PSYCHIATRIC DISORDERS ===
+
+1. MAJOR DEPRESSIVE DISORDER
+   - Criteria: ≥5 symptoms for ≥2 weeks including depressed mood/anhedonia
+   - Symptoms: Sleep changes, appetite changes, fatigue, worthlessness, concentration difficulty, suicidal ideation
+   - Assessment: Screen with PHQ-9; assess suicidality and psychosis
+   - First-line: SSRIs (fluoxetine, sertraline, paroxetine, citalopram, escitalopram)
+   - Augmentation: Atypical antipsychotic or buspirone if inadequate response after 4-6 weeks at therapeutic dose
+
+2. ANXIETY DISORDERS
+   - Generalized Anxiety: Excessive worry ≥6 months affecting daily function
+   - Panic Disorder: Recurrent unexpected panic attacks + anticipatory anxiety
+   - Social Anxiety: Fear/anxiety in social situations, avoidance behavior
+   - Agoraphobia: Fear of crowds, public transport, open spaces; avoidance
+   - Treatment: CBT first-line; SSRIs preferred pharmacotherapy; benzodiazepines short-term only
+
+3. BIPOLAR DISORDER MANAGEMENT
+   - Type I: Mania (≥7 days) + major depressive episodes; may alternate or have mixed
+   - Type II: Hypomania (≥4 days) + major depressive episodes; depressive episodes more frequent
+   - Mood stabilizers: Lithium (narrow therapeutic window 0.6-1.2 mEq/L), valproate, lamotrigine, carbamazepine
+   - Antipsychotics: Olanzapine, quetiapine, lurasidone, aripiprazole for acute mania/maintenance
+   - Psychosocial: Psychoeducation, family therapy, sleep hygiene critical for relapse prevention
+
+=== PEDIATRIC CONDITIONS ===
+
+1. ACUTE OTITIS MEDIA (AOM)
+   - Criteria: Acute onset + otoscopic findings (bulging, opacity, level, perforation/discharge) + signs of inflammation
+   - Most common pathogens: S. pneumoniae, H. influenzae, M. catarrhalis
+   - Treatment: Observation for 48-72 hours if mild in age >6 months and no severe symptoms
+   - Antibiotic: Amoxicillin first-line; amoxicillin-clavulanate if resistant risk
+   - Complications: Perforation, mastoiditis, meningitis (rare); analgesia important
+
+2. BRONCHIOLITIS
+   - Pathophysiology: Viral (RSV >90%) inflammation of small airways in infants <2 years
+   - Presentation: Upper respiratory symptoms → cough, tachypnea, wheezing, crackles
+   - Diagnosis: Clinical; rapid RSV testing or multiplex PCR if indicated
+   - Management: Supportive care (oxygen, fluids, mechanical ventilation if severe)
+   - No routine: Antibiotics, antivirals, or corticosteroids UNLESS evidence of bacterial superinfection
+
+3. CHICKENPOX (VARICELLA) INFECTION AND VACCINATION
+   - Viral pathology: VZV; first exposure = chickenpox; reactivation = shingles (decades later)
+   - Progression: Prodrome → maculopapular → vesicular ("crops") → pustular → crusting over 7-10 days
+   - Complications: Secondary bacterial infection, pneumonia, encephalitis, dissemination in immunocompromised
+   - Vaccination: 2 doses age 12 months and 4-6 years; effectiveness >90% for prevention, >95% for severe disease
+   - Treatment: Acyclovir if given within 24h of rash onset shortens duration; supportive care for uncomplicated
+
+This document serves as sample medical knowledge base for the RAG system to retrieve context from.

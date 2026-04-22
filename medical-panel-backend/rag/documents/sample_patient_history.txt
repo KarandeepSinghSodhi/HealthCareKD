@@ -1,0 +1,251 @@
+SAMPLE PATIENT HISTORY AND MEDICAL RECORDS FORMAT
+
+=== PATIENT DEMOGRAPHIC INFORMATION ===
+
+Patient ID: [REDACTED]
+Date of Birth: [REDACTED]
+Age: [REDACTED]
+Gender: [REDACTED]
+Contact: [REDACTED]
+Insurance: [REDACTED]
+Primary Care Physician: [Doctor Name]
+Last Updated: [Date]
+
+=== CHIEF COMPLAINT ===
+
+Patient presents with: [Chief complaint as documented by patient/provider]
+Duration: [How long symptoms have been present]
+Severity: On a scale of 1-10: [Patient's reported severity]
+
+=== HISTORY OF PRESENT ILLNESS (HPI) ===
+
+[Detailed narrative of current illness, including:
+- Onset and evolution of symptoms
+- Associated symptoms (constitutional, review of systems)
+- Exacerbating and alleviating factors
+- Impact on functional status
+- Medications tried and response
+- Relevant timeline of events]
+
+=== PAST MEDICAL HISTORY (PMH) ===
+
+Chronic Conditions:
+- Hypertension since [year], controlled with [medications]
+- Type 2 Diabetes Mellitus since [year], HbA1c [value]
+- Hyperlipidemia, managed with [medications]
+- Osteoarthritis of knees, limiting [activities]
+- GERD well-controlled on [medications]
+
+Previous Hospitalizations:
+- [Year]: Pneumonia, treated with IV antibiotics
+- [Year]: Appendectomy
+
+Previous Surgeries:
+- Cesarean section × 2 (years)
+- Cholecystectomy [year]
+- Cataract surgery bilateral (years)
+
+=== MEDICATIONS ===
+
+Current Medications:
+1. Lisinopril 10 mg daily - for hypertension
+2. Metformin 1000 mg twice daily - for diabetes
+3. Atorvastatin 20 mg daily - for cholesterol
+4. Omeprazole 20 mg daily - for GERD
+5. Ibuprofen 400 mg as needed - for arthritis pain
+6. Vitamin D 1000 IU daily - supplementation
+
+Allergies:
+- Penicillin: Rash (urticarial)
+- Sulfonamides: Stevens-Johnson syndrome reaction (documented)
+- NSAIDs: GI upset, gastritis risk
+
+Medication Adherence: Generally good (>80% compliance reported)
+
+=== FAMILY HISTORY ===
+
+Mother: Alive, age 80
+- Osteoporosis
+- Type 2 diabetes
+
+Father: Deceased age 72
+- Myocardial infarction age 60
+- Hypertension
+- Hyperlipidemia
+
+Siblings: [Number and conditions]
+
+Children: [Number and relevant health conditions]
+
+Significant Family History of:
+- Cardiovascular disease (father's early MI)
+- Diabetes (mother, multiple relatives)
+- Cancer (grandmother: breast cancer age 55)
+
+=== SOCIAL HISTORY ===
+
+Occupation: [Current/retired]
+Living Situation: Lives with [family/alone]
+Home Environment: [Steps, safety features, adaptations]
+
+Tobacco: Former smoker, quit [year], [pack-year history]
+Alcohol: [Quantity and frequency]
+Illicit Drugs: Denies current use, previous [history if applicable]
+
+Physical Activity Level:
+- Sedentary / Light / Moderate / Vigorous
+- Specific activities: [Walking, swimming, gym, sports]
+- Limitations due to: [Joint pain, dyspnea, other]
+
+Diet: [Describe typical diet, sodium intake, fiber, cultural foods]
+Sleep: [Hours per night, quality, sleep disorders]
+
+=== REVIEW OF SYSTEMS ===
+
+Constitutional: Weight loss/gain [amount, timeframe], fatigue level
+Eyes: Vision changes, eye pain, discharge
+ENT: Hearing loss, chronic sinusitis, sore throat
+Respiratory: Cough, dyspnea, orthopnea, PND
+Cardiovascular: Chest pain, palpitations, leg swelling, claudication
+Gastrointestinal: Nausea/vomiting, diarrhea/constipation, abdominal pain, appetite changes
+Urinary: Dysuria, frequency, retention, incontinence
+Musculoskeletal: Joint pain, stiffness, swelling, limitations
+Neurological: Headaches, dizzy spells, numbness, weakness, cognitive changes
+Psychiatric: Mood, anxiety, depression screening (PHQ-9: [score])
+Skin: Rash, itching, lesions, hair/nail changes
+Endocrine: Heat/cold intolerance, sweating, weight changes, thirst/urination frequency
+
+=== PHYSICAL EXAMINATION ===
+
+Vital Signs:
+- Blood Pressure: [systolic/diastolic] mmHg [position and arm]
+- Heart Rate: [beats/min] [regular/irregular]
+- Respiratory Rate: [breaths/min]
+- Temperature: [°F/°C]
+- Weight: [lbs/kg]
+- Height: [feet-inches/cm]
+- BMI: [calculated value] - Classification
+
+General: Alert and oriented, no acute distress [or describe appearance]
+HEENT: [Eyes pupils, vision; Ears hearing; Nose; Throat - normal or findings]
+Neck: [ROM, thyroid palpation, lymph nodes, bruits]
+Lungs: [Breath sounds bilateral, crackles, wheezes, rhonchi]
+Heart: [RRR vs rhythm, murmurs, rubs, S3/S4, JVD]
+Abdomen: [Soft, tender, distension, bowel sounds, masses, organomegaly]
+Extremities: [Edema, cyanosis, clubbing, varicose veins, pulses]
+Skin: [Rash, lesions, ulcers, color, turgor]
+Neuro: [Mental status, CN II-XII, motor 5/5, reflexes, sensation, gait, cerebellar testing]
+Psychiatric: [Affect, mood congruence, thought process]
+
+=== ASSESSMENT AND PLAN ===
+
+Problem List:
+1. Hypertension - Continue current regimen, recheck BP in 2 weeks
+2. Type 2 Diabetes - Continue metformin, recheck HbA1c in 3 months
+3. Hyperlipidemia - Continue atorvastatin, recheck lipid panel in 3 months
+4. [Current Chief Complaint] - [Assessment, differential diagnosis]
+   Plan: [Diagnostic tests, treatment, follow-up]
+
+Diagnostic Plan:
+- CBC, CMP, lipid panel [if indicated]
+- ECG [if cardiac symptoms]
+- Chest X-ray [if respiratory symptoms]
+- Other: [Based on clinical presentation]
+
+Treatment Plan:
+- Medication adjustments: [List any changes]
+- Referrals: Cardiology, Nephrology, Ophthalmology [as indicated]
+- Patient education: [Topics discussed]
+- Lifestyle modifications: [Diet, exercise, stress management, smoking cessation]
+
+Follow-up Plan:
+- Office visit in [timeframe]
+- Labs to be drawn [when]
+- Patient to call if [red flag symptoms]
+- Phone follow-up [if indicated]
+
+=== RECENT LAB RESULTS ===
+
+Complete Blood Count (CBC):
+- WBC: 7.5 K/uL [normal 4.5-11.0]
+- RBC: 4.8 M/uL [normal 4.5-5.9 for males, 4.1-5.1 for females]
+- Hemoglobin: 14.2 g/dL [normal 13.5-17.5 for males, 12.0-15.5 for females]
+- Hematocrit: 42% [normal 41-53 for males, 36-46 for females]
+- MCV: 88 fL [normal 80-100]
+- Platelets: 250 K/uL [normal 150-400]
+
+Comprehensive Metabolic Panel (CMP):
+- Sodium: 138 mEq/L [normal 136-145]
+- Potassium: 4.2 mEq/L [normal 3.5-5.0]
+- Chloride: 102 mEq/L [normal 98-107]
+- CO2: 24 mEq/L [normal 23-29]
+- BUN: 18 mg/dL [normal 7-20]
+- Creatinine: 0.9 mg/dL [normal 0.7-1.3 for males, 0.6-1.1 for females]
+- Glucose: 125 mg/dL [normal fasting 70-100]
+- Calcium: 9.5 mg/dL [normal 8.5-10.5]
+- Albumin: 4.2 g/dL [normal 3.5-5.0]
+- Total Protein: 7.0 g/dL [normal 6.0-8.3]
+- AST: 28 U/L [normal 10-40]
+- ALT: 32 U/L [normal 7-56]
+- ALP: 72 U/L [normal 30-120]
+- Bilirubin, Total: 0.8 mg/dL [normal 0.1-1.2]
+
+Lipid Panel:
+- Total Cholesterol: 198 mg/dL [desirable <200]
+- LDL: 110 mg/dL [desirable <100]
+- HDL: 55 mg/dL [desirable >40 for males, >50 for females]
+- Triglycerides: 95 mg/dL [normal <150]
+
+Hemoglobin A1c: 7.2% [goal typically <7% for nonpregnant adults with diabetes]
+
+Urinalysis:
+- Color: Yellow
+- Clarity: Clear
+- Glucose: Negative
+- Protein: Negative
+- Nitrites: Negative
+- Leukocyte esterase: Negative
+- WBC: 0-2 /hpf
+- RBC: 0-1 /hpf
+- Bacteria: None seen
+
+=== IMAGING RESULTS ===
+
+Chest X-ray (date): [Description of findings, impression]
+EKG (date): [Rate, rhythm, intervals, segments, impression]
+Echocardiogram (date): [Chamber sizes, wall motion, ejection fraction, valves]
+Abdominal Ultrasound (date): [Liver, gallbladder, pancreas, spleen, kidneys findings]
+
+=== PREVENTIVE CARE ===
+
+Vaccinations:
+- Influenza: Last dose [year/date]
+- Pneumococcal: [PPSV23 and/or PCV20 based on age/conditions and dates]
+- COVID-19: [Doses and dates received]
+- Tdap/Td: Last dose [year/date]
+- Shingles (Shingrix): [Doses and dates if applicable]
+- MMR, Varicella: [Documented immunity or vaccination history]
+
+Screenings:
+- Mammography: [Results and date]
+- Colonoscopy: [Date, polyps found, next screening interval]
+- Skin cancer screening: [Annual by dermatology or PCP documented]
+- Vision exam: [Date by ophthalmology/optometry]
+- Hearing exam: [Date if indicated]
+- Bone density (DEXA): [T-score, osteoporosis risk stratification]
+
+=== NOTES ON DOCUMENT STRUCTURE FOR RAG ===
+
+This sample patient record demonstrates:
+1. Standard medical documentation format readily recognizable to specialists
+2. Comprehensive information specialists might query (PMH, medications, allergies, labs)
+3. Realistic lab values with normal ranges for context
+4. Multiple sections specialists from different disciplines would reference
+5. Information density suitable for chunking and semantic search
+
+In actual implementation:
+- Patient names and identifiable information would be [REDACTED] 
+- Multiple patient records can be loaded into the RAG system
+- Specialists query by patient ID or clinical question
+- RAG retrieves relevant sections (PMH, current labs, medications) without loading entire record each time
+- Reduces token usage compared to sending full patient charts with every LLM request
